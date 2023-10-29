@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="index.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- GOOGLE FONT OSWALD -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu" width="100%" style="position: fixed;">
+                <div style="display: flex;justify-content: center;text-align: center;grid-area: logo;min-width: 30px;">
+                    <img width="100%" height="100%" src="imgs/icon.png" alt="Icono">
+                </div>
+                <div style="grid-area: search;">
+                    <input type="text" onkeydown="tocarTecla()" placeholder="Buscar Artistas / Obras / Temas" style="height: 35px; width: 90%;font-size: 105%;border-top: 0px;border-left: 0px;border-right: 0px;" name="" id="buscador">
+                    <img onclick="buscar()" class="lupa" width="3%" src="imgs/lupa.png" alt="Lupa" style="position: relative;left: -5%;">
+                </div>
+                <div style="grid-area: login; display: flex; justify-content: space-between;">
+                    <a class="link">Compra</a>
+                    <a class="link">Venta</a>
+                    <a class="login">Login</a>
+                    <a class="registrar">Registrarse</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <br><br><br>
+
+    <!-- grid -->
+    <div class="container">
+        <div class="section">
+            <h2>Obras Recomendadas</h2>
+            <div class="grid">
+                <!-- Tarjetas de Obras Recomendadas -->
+                <div class="card">
+                    <img src="imgs/1.jpg" alt="Obra 1">
+                </div>
+                <div class="card">
+                    <img src="imgs/2.jpg" alt="Obra 2">
+                </div>
+                <div class="card">
+                    <img src="imgs/3.jpg" alt="Obra 3">
+                </div>
+                <div class="card">
+                    <img src="imgs/4.jpg" alt="Obra 4">
+                </div>
+                <div class="card">
+                    <img src="imgs/5.jpg" alt="Obra 5">
+                </div>
+            </div>
+        </div>
+
+        <br><br><br>
+
+        <div class="section">
+            <h2>Obras en Venta</h2>
+            <div class="grid">
+                <!-- Tarjetas de Obras en Venta -->
+                <div class="card">
+                    <img src="imgs/6.jpg" alt="Obra 6">
+                </div>
+                <div class="card">
+                    <img src="imgs/7.jpg" alt="Obra 7">
+                </div>
+                <div class="card">
+                    <img src="imgs/8.jpg" alt="Obra 8">
+                </div>
+                <div class="card">
+                    <img src="imgs/9.jpg" alt="Obra 9">
+                </div>
+                <div class="card">
+                    <img src="imgs/10.jpg" alt="Obra 10">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <!--::::Pie de Pagina::::::-->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="img/logotipo.sng" alt="Nuestro logo">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, ipsa</p>
+            </div>
+            <div class="box">
+                <h2>SEGUINOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+        </div>
+            <small>&copy; 2023 <b>Diseños & Arte</b> - Todos los Derechos Reservados.</small>
+
+    <script src="app.js"></script>
+</body>
+</html>

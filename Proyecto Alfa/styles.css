@@ -1,0 +1,208 @@
+/*:::::header*/
+.menu {
+    /*display: flex;
+    justify-content: space-between;
+    align-items: center;*/
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+    height: 10%;
+    min-height: 50px;
+    left: 0%;
+    top: 0%; 
+    margin: 0%; 
+    padding: 5px; 
+    background-color: white; 
+    border: 1px black solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+
+    grid-template-columns: 0.2fr 0.3fr 3.7fr 2.2fr 0.5fr;
+    grid-template-areas: 
+    'void1 logo search login void3'
+    ;
+}
+
+.lupa {
+    cursor: pointer;
+    min-width: 9px;
+}
+
+.img-result {
+    max-width: 150px;
+    max-height: 150px;
+}
+.box-result {
+    border: 1px gray;
+    align-items: center;
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    grid-template-columns: 152px 1fr;
+    grid-template-areas: "img data";
+}
+.title-result {
+    font-style: italic;
+}
+.author-result {
+    color: gray;
+}
+
+a {
+    padding: 2%;
+    font-size: 90%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.link {
+    transition: color 0.5s ease;
+}
+.link:hover {
+    cursor: pointer;
+    color: dodgerblue;
+}
+.link:active {
+    background-color: white;
+}
+
+.login {
+    font-size: 80%;
+    transition: background-color 0.5s ease;
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    padding: 2% 9% 2% 9%;
+}
+.login:hover {
+    cursor: pointer;
+    background-color: dodgerblue;
+}
+.registrar {
+    font-size: 80%;
+    transition: background-color 0.5s ease;
+    color: black;
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 15px;
+    padding: 2% 8% 2% 8%;
+}
+.registrar:hover {
+    cursor: pointer;
+    color: white;
+    background-color: dodgerblue;
+    border-color: dodgerblue;
+}
+/*
+@media (max-width: 768px) {
+    .menu {
+        align-items: flex-start;
+    }
+}*/
+/*GENERAL*/
+*{
+    padding: 0; /*relleno cero*/
+    margin: 0; /*margen cero*/
+    box-sizing: border-box; /*el padding y el border pasan a formar parte de la caja y no lo suma posteriormente*/
+}
+
+
+/*:::::grid*/
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.card img {
+    max-width: 100%;
+    grid-row: 2;
+}
+
+/*:::::Pie de Pagina*/
+.pie-pagina{
+    width: 100%;
+    background-color: #c5efefe3;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #787878;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #8a8a8a;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 20px;
+    background-color: #cce0df;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: #171717;
+}
+.pie-pagina .grupo-2{
+    background-color: #ffffff;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 85%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
