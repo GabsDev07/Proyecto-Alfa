@@ -1,0 +1,206 @@
+.menu {
+    z-index: 1; /*Para estar por encima de todo*/
+    
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+    height: 10%;
+    min-height: 50px;
+    left: 0%;
+    top: 0%; 
+    margin: 0%; 
+    padding: 5px;
+    box-sizing: initial;
+    background-color: white; 
+    border: 1px black solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    font-family: 'Oswald', sans-serif;
+
+    grid-template-columns: 0.2fr 0.3fr 3.7fr 2.2fr 0.5fr;
+    grid-template-areas: 
+    'void1 logo search login void2'
+    ;
+}
+
+.espacio-header {
+    min-height: 60px;
+}
+
+.lupa {
+    cursor: pointer;
+    min-width: 15px;
+}
+
+.img-result {
+    max-width: 150px;
+    max-height: 150px;
+}
+.box-result {
+    align-items: center;
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    grid-template-columns: 152px 1fr;
+    grid-template-areas: "img data";
+}
+.title-result {
+    font-style: italic;
+}
+.author-result {
+    color: gray;
+}
+
+a {
+    padding: 2%;
+    font-size: 90%;
+    /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+}
+.link {
+    transition: color 0.5s ease;
+}
+.link:hover {
+    cursor: pointer;
+    color: #C4DFDF;
+}
+.link:active {
+    background-color: white;
+}
+
+.login {
+    font-size: 80%;
+    transition: background-color 0.5s ease;
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    padding: 2% 9% 2% 9%;
+}
+.login:hover {
+    cursor: pointer;
+    background-color: #C4DFDF;
+}
+.registrar {
+    font-size: 80%;
+    transition: background-color 0.5s ease;
+    color: black;
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 15px;
+    padding: 2% 8% 2% 8%;
+}
+.registrar:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #C4DFDF;
+    border-color: #C4DFDF;
+}
+
+@media (max-width: 600px) {
+    .menu {
+        min-height: 82px;
+        grid-template-columns: 0.2fr 0.3fr 3.7fr 0.2fr;
+        grid-template-rows: 40px 25px;
+        grid-template-areas: 
+        'void1 logo search void2'
+        'void1 login login void2'
+        ;
+    }
+    .espacio-header {
+        min-height: 82px;
+    }
+}
+
+
+
+.card {
+    max-width: 18rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%; /* La imagen se ajustará automáticamente al ancho de la tarjeta */
+    height: auto; /* Mantiene la relación de aspecto original */
+}
+
+#load-artwork-button {
+    display: block; /* Hace que el botón sea un bloque para que esté debajo de la imagen */
+    margin: 0 auto; /* Centra el botón horizontalmente */
+}
+
+
+/*:::::Pie de Pagina*/
+.pie-pagina{
+    width: 100%;
+    background-color: #c5efefe3;
+    font-family: 'Oswald', sans-serif;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.loguito{
+    width: 45px;
+    height: auto;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #787878;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #8a8a8a;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 20px;
+    background-color: #cce0df;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: #171717;
+}
+.pie-pagina .grupo-2{
+    background-color: #ffffff;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 85%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
